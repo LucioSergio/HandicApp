@@ -1,4 +1,4 @@
-/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +7,8 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Modern font stack */
     line-height: 1.6;
-    background-color: #f4f4f4; /* Softer background */
+    background-color: #f4f4f4; 
     color: #333;
     display: flex;
     flex-direction: column;
@@ -23,11 +22,11 @@ header {
     background-color: #005A8D;
     padding: 20px 0;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 nav {
-    max-width: 1200px; /* Constrain navbar width */
+    max-width: 1200px; 
     margin: 0 auto;
     text-align: center;
 }
@@ -38,24 +37,24 @@ nav ul {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0; /* Removed padding */
+    padding: 0; 
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 15px; /* Adjusted padding */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    padding: 10px 15px;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 215, 0, 0.2); /* Gold hover with transparency */
+    background-color: rgba(255, 215, 0, 0.2); 
     color: #FFD700;
 }
 
-/* Main Content */
+/* Main*/
 main {
     flex: 1;
     padding: 50px 5%;
@@ -65,17 +64,16 @@ main {
 section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 5%; /* Adjusted padding */
+    padding: 60px 5%; 
 }
 
-/* Hero Section */
+/* Home  */
 .hero {
     text-align: center;
     background-color: #005A8D;
     color: white;
-    padding: 100px 20px; /* Adjusted padding */
+    padding: 100px 20px; 
     width: 100%;
-    background-image: url("hero-image.jpg"); /* Add hero image */
     background-size: cover;
     background-position: center;
 }
@@ -92,44 +90,44 @@ section {
 }
 
 .hero img {
-    max-width: 600px;
+    max-width: 300px;
     margin-top: 30px;
-    border-radius: 8px; /* Rounded corners for image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for image */
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .btn {
-    display: inline-block; /* Il bottone si comporta come un elemento in linea, ma con le proprietà di un elemento di blocco */
-    background-color: #005A8D; /* Colore di sfondo blu (puoi cambiarlo) */
-    color: white; /* Colore del testo bianco per contrasto */
-    padding: 15px 30px; /* Spazio interno al bottone (modifica i valori per più o meno padding) */
-    text-decoration: none; /* Rimuove la sottolineatura dai link */
-    border-radius: 5px; /* Arrotonda gli angoli del bottone */
-    font-size: 1.1rem; /* Dimensione del testo (puoi usare altre unità come px o em) */
-    font-weight: 600; /* Grassetto (opzionale) */
-    transition: background-color 0.3s ease; /* Effetto плавнalla transizione del colore di sfondo */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ombra leggera (opzionale) */
+    display: inline-block; 
+    background-color: #005A8D; 
+    color: white; 
+    padding: 15px 30px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 1.1rem; 
+    font-weight: 600; 
+    transition: background-color 0.3s ease; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .btn:hover {
-    background-color: #003f66; /* Colore di sfondo più scuro al passaggio del mouse */
-    transform: translateY(-2px); /* Leggero spostamento verso l'alto al passaggio del mouse */
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Ombra più marcata al passaggio del mouse */
+    background-color: #003f66; 
+    transform: translateY(-2px); 
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); 
 }
 
 
-/* About Section */
+/* About  */
 .about {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: center; /* Centra il testo all'interno della sezione */
+    text-align: center; 
 }
 
 .about h2 {
-    width: 100%; /* Assicura che il titolo "Chi Siamo" occupi tutta la larghezza */
+    width: 100%; 
     margin-bottom: 20px;
-    color: #005A8D; /* Titolo in blu */
+    color: #005A8D; 
 }
 
 .team-member {
@@ -148,14 +146,14 @@ section {
 
 .team-member h3 {
     margin-bottom: 5px;
-    color: #005A8D; /* Titoli dei membri del team in blu */
+    color: #005A8D; 
 }
 
 .team-member p {
-    color: #333; /* Testo in grigio scuro per contrasto */
+    color: #333; 
 }
 
-/* Stili per schermi più piccoli */
+/* responsive */
 @media (max-width: 768px) {
     .team-member {
         width: 100%;
@@ -163,54 +161,53 @@ section {
 }
 /*descrizione prodotto*/
 .prodotto-descrizione {
-    display: flex; /* Utilizza flexbox per un layout più flessibile */
-    flex-direction: column; /* Imposta la direzione principale вертикально */
-    align-items: center; /* Allinea gli elementi al centro orizzontalmente */
-    padding: 40px; /* Aggiungi padding per spaziatura interna */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 40px; 
 }
 
 .prodotto-descrizione h2 {
-    margin-bottom: 20px; /* Spazio sotto il titolo */
-    color: #333; /* Colore del titolo più scuro */
+    margin-bottom: 20px; 
+    color: #333; 
 }
 
 .prodotto-descrizione img {
-    max-width: 50%; /* Larghezza massima dell'immagine (50% della pagina) */
-    height: auto; /* L'altezza si adatta пропорционально */
-    border-radius: 8px; /* Angoli arrotondati per l'immagine */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera per l'immagine */
-    margin-bottom: 30px; /* Spazio sotto l'immagine */
+    max-width: 50%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 30px; 
 }
 
 .prodotto-descrizione p {
-    text-align: justify; /* Testo giustificato per una migliore leggibilità */
-    line-height: 1.6; /* Interlinea per una migliore leggibilità */
-    color: #555; /* Colore del testo leggermente più chiaro */
-    margin-bottom: 20px; /* Spazio tra i paragrafi */
+    text-align: justify; 
+    line-height: 1.6; 
+    color: #555; 
+    margin-bottom: 20px; 
 }
 
 .prodotto-descrizione .btn-acquista {
-    /* Stili per il pulsante "Aggiungi al carrello" */
-    background-color: #005A8D; /* Colore di sfondo blu */
-    color: white; /* Colore del testo bianco */
-    padding: 12px 25px; /* Padding per il pulsante */
-    border: none; /* Nessun bordo */
-    border-radius: 5px; /* Angoli arrotondati */
-    cursor: pointer; /* Cursore a mano */
-    transition: background-color 0.3s ease; /* Transizione плавнalla del colore di sfondo */
+    background-color: #005A8D; 
+    color: white; 
+    padding: 12px 25px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 .prodotto-descrizione .btn-acquista:hover {
-    background-color: #004477; /* Colore di sfondo più scuro al passaggio del mouse */
+    background-color: #004477; 
 }
 
-/* Media query per schermi più piccoli */
+/* responsive */
 @media (max-width: 768px) {
     .prodotto-descrizione img {
-        max-width: 90%; /* Larghezza massima dell'immagine (90% della pagina) su schermi piccoli */
+        max-width: 90%; 
     }
 }
-/* Products Section */
+/* Prodotti*/
 .prodotti {
     background-color: #fff;
     padding: 60px 5%;
@@ -224,7 +221,7 @@ section {
 
 .prodotti-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 40px;
 }
 
@@ -233,19 +230,19 @@ section {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; /* Smooth scaling on hover */
+    transition: transform 0.3s ease; 
 }
 
 .prodotto:hover {
-    transform: translateY(-5px); /* Move up slightly on hover */
+    transform: translateY(-5px); 
 }
 
 .prodotto img {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 15px;
-    object-fit: cover; /* Ensure images cover the container */
-    height: auto; /* Set a fixed height for images */
+    object-fit: cover; 
+    height: auto; 
 }
 
 .prodotto h3 {
@@ -258,10 +255,10 @@ section {
     flex-grow: 1;
 }
 .prodotto {
-    display: block; /* Il contenitore prodotto occupa tutto lo spazio disponibile */
-    text-decoration: none; /* Rimuove la sottolineatura dai link */
-    color: inherit; /* Il testo eredita il colore del genitore */
-    cursor: pointer; /* Mostra il cursore come una mano al passaggio del mouse */
+    display: block;
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer; 
 }
 
 .btn-acquista {
@@ -283,7 +280,7 @@ section {
     transform: scale(1.05);
 }
 
-/* Contact Section */
+/* Contact  */
 .contact {
     background-color: #005A8D;
     color: white;
@@ -395,5 +392,5 @@ footer {
     padding: 20px 0;
     width: 100%;
     margin-top: auto;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Shadow on top of footer */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
 }
