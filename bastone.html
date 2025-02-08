@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bastone Intelligenti - HANDICAPP</title>
+    <title>Bastone Intelligente - HANDICAPP</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function showAlert() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Prodotto aggiunto al carrello',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+
+    </script>
 </head>
 <body>
     <header>
@@ -19,10 +31,10 @@
     </header>
 
     <section class="prodotto-descrizione">
-        <h2>Bastone Intelligenti</h2>
+        <h2>Bastone intelligente</h2>
         <img src="./img/bastone.jpeg" alt="Occhiali Intelligenti">
         <p>Bastone intelligente che combina intelligenza artificiale (AI) e l'Assistente Vocale Google per migliorare la mobilità e la sicurezza delle persone con disabilità sensoriali. Il bastone rileva ostacoli e fornisce indicazioni vocali, mentre monitora la posizione dell'utente e invia notifiche di emergenza. Grazie alla personalizzazione tramite l'app HandicAPP, l'utente può adattare le preferenze e ottimizzare l’esperienza. Questa soluzione innovativa favorisce l'autonomia e l'inclusione sociale, rafforzando la posizione dell’azienda nel settore delle tecnologie assistive.</p>
-        <button class="btn-acquista">Aggiungi al carrello</button>
+        <button class="btn-acquista" onclick="showAlert()">Aggiungi al carrello</button>
     </section>
 
     <footer>
