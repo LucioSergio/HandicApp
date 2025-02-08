@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Occhiali Intelligenti - HANDICAPP</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function showAlert() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Prodotto aggiunto al carrello',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+
+    </script>
 </head>
 <body>
     <header>
@@ -22,7 +34,7 @@
         <h2>Occhiali Intelligenti</h2>
         <img src="./img/occhiali.webp" alt="Occhiali Intelligenti">
         <p>Occhiali intelligenti con funzionalità assistive avanzate per migliorare ulteriormente l'esperienza utente. I nostri occhiali intelligenti rappresentano un'avanzata soluzione tecnologica progettata per migliorare la comunicazione in tempo. Dotati di un microfono di alta qualità e un sofisticato software di riconoscimento vocale, trascrivono automaticamente il parlato in sottotitoli visibili nel campo visivo dell'utente. Grazie all'integrazione di intelligenza artificiale, offriamo un'esperienza personalizzabile e altamente intuitiva, promuovendo inclusività e autonomia sociale.</p>
-        <button class="btn-acquista">Aggiungi al carrello</button>
+        <button class="btn-acquista" onclick="showAlert()">Aggiungi al carrello</button>
     </section>
 
     <footer>
