@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
 
     </script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -32,13 +34,33 @@
 
     <section class="prodotto-descrizione">
         <h2>Bastone intelligente</h2>
-        <img src="./img/bastone.jpeg" alt="Occhiali Intelligenti">
-        <p>Bastone intelligente che combina intelligenza artificiale (AI) e l'Assistente Vocale Google per migliorare la mobilità e la sicurezza delle persone con disabilità sensoriali. Il bastone rileva ostacoli e fornisce indicazioni vocali, mentre monitora la posizione dell'utente e invia notifiche di emergenza. Grazie alla personalizzazione tramite l'app HandicAPP, l'utente può adattare le preferenze e ottimizzare l’esperienza. Questa soluzione innovativa favorisce l'autonomia e l'inclusione sociale, rafforzando la posizione dell’azienda nel settore delle tecnologie assistive.</p>
+        <div class="image-container">
+            <img src="./img/bastone (1).jpeg" alt="bastone Intelligente" class="active">
+            <img src="./img/bastone (2).jpeg" alt="bastone Intelligente 2" >
+            <img src="./img/bastone (3).jpeg" alt="bastone Intelligente 0">
+        </div>
+        <br>
+        <p>HandicAPP introduce un bastone intelligente che utilizza l'intelligenza artificiale per migliorare la mobilità e la sicurezza delle persone con disabilità motorie e sensoriali. Il
+            bastone rileva ostacoli e fornisce indicazioni vocali, mentre monitora la posizione dell'utente e invia
+            notifiche di emergenza. Grazie alla personalizzazione tramite l'app HandicAPP, l'utente può adattare le
+            preferenze e ottimizzare l’esperienza. Questa soluzione innovativa favorisce l'autonomia e l'inclusione
+            sociale, rafforzando la posizione dell’azienda nel settore delle tecnologie assistive. </p>
         <button class="btn-acquista" onclick="showAlert()">Aggiungi al carrello</button>
     </section>
 
     <footer>
         <p>&copy; 2025 HANDICAPP. Tutti i diritti riservati.</p>
     </footer>
+    <script>
+        const images = document.querySelectorAll('.image-container img');
+        let currentImage = 0;
+
+        setInterval(() => {
+            images[currentImage].classList.remove('active');
+            currentImage = (currentImage + 1) % images.length;
+            images[currentImage].classList.add('active');
+        }, 3000);
+    </script>
 </body>
+
 </html>

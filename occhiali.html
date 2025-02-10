@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,9 @@
                 timer: 1500
             });
         }
-
     </script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -32,13 +33,35 @@
 
     <section class="prodotto-descrizione">
         <h2>Occhiali Intelligenti</h2>
-        <img src="./img/occhiali.webp" alt="Occhiali Intelligenti">
-        <p>Occhiali intelligenti con funzionalità assistive avanzate per migliorare ulteriormente l'esperienza utente. I nostri occhiali intelligenti rappresentano un'avanzata soluzione tecnologica progettata per migliorare la comunicazione in tempo. Dotati di un microfono di alta qualità e un sofisticato software di riconoscimento vocale, trascrivono automaticamente il parlato in sottotitoli visibili nel campo visivo dell'utente. Grazie all'integrazione di intelligenza artificiale, offriamo un'esperienza personalizzabile e altamente intuitiva, promuovendo inclusività e autonomia sociale.</p>
+        <div class="image-container">
+            <img src="./img/occhiali1.webp" alt="Occhiali Intelligenti" class="active">
+            <img src="./img/occhiali2.webp" alt="Occhiali Intelligenti 2" >
+            <img src="./img/occhiali0.webp" alt="Occhiali Intelligenti 0">
+        </div>
+        <br>
+        <p>In collaborazione con Ray-Ban, i nostri occhiali intelligenti combinano stile iconico e tecnologia avanzata
+            per migliorare ulteriormente l'esperienza utente. Dotati di un microfono di alta qualità e un sofisticato
+            software di riconoscimento vocale, trascrivono automaticamente il parlato in sottotitoli visibili nel campo
+            visivo dell'utente. Grazie all'integrazione di intelligenza artificiale, offriamo un'esperienza
+            personalizzabile e altamente intuitiva, promuovendo inclusività e autonomia sociale. Con il design elegante
+            di Ray-Ban, questi occhiali rappresentano una perfetta fusione di moda e funzionalità.</p>
         <button class="btn-acquista" onclick="showAlert()">Aggiungi al carrello</button>
     </section>
 
     <footer>
         <p>&copy; 2025 HANDICAPP. Tutti i diritti riservati.</p>
     </footer>
+
+    <script>
+        const images = document.querySelectorAll('.image-container img');
+        let currentImage = 0;
+
+        setInterval(() => {
+            images[currentImage].classList.remove('active');
+            currentImage = (currentImage + 1) % images.length;
+            images[currentImage].classList.add('active');
+        }, 3000);
+    </script>
 </body>
+
 </html>
